@@ -5,8 +5,11 @@ const nextConfig: NextConfig = {
   typescript: {
     ignorBuildErrors:true
   },
-  eslint:{ ignoreDuringBuilda:true},
-   
+  eslint: { ignoreDuringBuilda: true },
+   experimental: {
+    turbo: false, // disable Turbopack for production
+  },
+  
   images: {
     remotePatterns: [
       {
